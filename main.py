@@ -8,3 +8,6 @@ def health():
     return {"status": "ok"}
 
 
+@app.get("/students")
+def list_students():
+    return[{"id":1, "name": "ana"},{"id": 2, "name": "Luis"}]
